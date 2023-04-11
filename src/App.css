@@ -13,4 +13,9 @@
   font-weight: 700;
   font-size: 24px;
   padding-left: 30px;
+  justify-content: space-between;
+}
+
+.logo{
+  padding-right: 50px;
 }
