@@ -1,0 +1,12 @@
+.header-container{
+    background-color: whitesmoke;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: space-between;
+  }
+  
+  .shopping-cart{
+    padding-right: 30px;
+  }
