@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './HomePage.css'
 import axios from 'axios'
+import ProductCard from '../../components/ProductCard/ProductCard'
 
 function HomePage() {
 
@@ -15,7 +16,7 @@ const [categories, setCategories] =useState([])
             axios.get('https://fakestoreapi.com/products')
             .then(result=>{
                 //this code stores the data
-                // console.log(result)
+                console.log(result)
                 setProducts(result.data)
             })
             .catch(err => console.log(err))
@@ -31,7 +32,7 @@ const [categories, setCategories] =useState([])
             })
             .catch(categoryErr => console.log(categoryErr))
 
-            
+
         },[]
     )
 
@@ -45,7 +46,7 @@ const [categories, setCategories] =useState([])
 
         <div className="products-container">
         {
-        products.map(items=><img src={items.image} />)
+        products.map(product=><ProductCard key={product.id} products={product}/>)
         }
         </div>
    
