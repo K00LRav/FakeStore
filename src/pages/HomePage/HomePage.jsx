@@ -40,7 +40,7 @@ const [categories, setCategories] =useState([])
     <div className='homepage-container'>
         <div className="category-container">
             {
-                categories.map(item=> <button>{item}</button>)
+                categories.map(item=> <button className='category-btn'>{item}</button>)
             }
         </div>
 

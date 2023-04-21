@@ -10,3 +10,15 @@
   .shopping-cart{
     padding-right: 30px;
   }
+
+  .shopping-cart p{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    height: 16px;
+    width: 17.69px;
+    text-align: center;
+    position: relative;
+    left: 12px;
+    top: 12px;
+  }

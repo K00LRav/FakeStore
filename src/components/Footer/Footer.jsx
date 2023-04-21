@@ -4,7 +4,8 @@ import './Footer.css'
 function Footer() {
   return (
     <div className='footer-container'>
-        Footer
+        <p>Made with ❤️ by mimo</p>
+        <button className='contact-btn'>Contact Us</button>
         </div>
   )
 }

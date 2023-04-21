@@ -1,4 +1,19 @@
 .footer-container{
     background-color: #3A4895;
     height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container p{
+    padding-left: 10px;
+    color: white;
+}
+
+.contact-btn{
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
 }

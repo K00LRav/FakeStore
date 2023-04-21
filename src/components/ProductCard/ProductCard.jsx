@@ -4,9 +4,14 @@ import './ProductCard.css'
 function ProductCard({products}) {
   return (
     <div className='product-cards'>
+      <div className='product-img'>
         <img src={products.image} alt="" />
-        <p>{products.title}</p>
-        <p>{products.price}</p>
+        </div>
+        <div className='product-info'>
+        <p className='title'>{products.title}</p>
+        <p className='category'>{products.category}</p>
+        <p className='price'>${products.price}</p>
+        </div>
         </div>
   )
 }
