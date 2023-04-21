@@ -1,5 +1,6 @@
 import React from 'react'
 import './ProductCard.css'
+import heart from '../../assets/heart.svg'
 
 function ProductCard({products}) {
   return (
@@ -7,6 +8,7 @@ function ProductCard({products}) {
       <div className='product-img'>
         <img src={products.image} alt="" />
         </div>
+        <p className='favorite-icon' >        <img src={heart}/></p>
         <div className='product-info'>
         <p className='title'>{products.title}</p>
         <p className='category'>{products.category}</p>

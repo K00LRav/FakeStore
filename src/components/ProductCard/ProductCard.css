@@ -56,3 +56,22 @@
 .price{
     font-weight: 700;
 }
+
+.favorite-icon{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #949494;
+    border-radius: 50%;;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    left: 210px;
+    bottom: 140px;
+}
+
+.favorite-icon img{
+    height: 20px;
+    width: 10px;
+}
