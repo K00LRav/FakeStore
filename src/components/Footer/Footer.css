@@ -11,9 +11,10 @@
     color: white;
 }
 
-.contact-btn{
+.contact-us{
     margin-right: 10px;
     border: none;
     background-color: transparent;
     color: white;
+    text-decoration: none;
 }
