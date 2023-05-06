@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -7,7 +8,8 @@ function Header() {
         <a href='/'><div className="logo"><img src="./src/assets/logo.svg" alt="" /></div></a>
         <div className="shopping-cart">
           <p>1</p>
-          <img src="./src/assets/shoppingcart.svg" alt="shopping-cart" /></div>
+          <Link to='./CheckOut'><img src="./src/assets/shoppingcart.svg" alt="shopping-cart" /></Link>
+          </div>
         </div>
   )
 }

@@ -3,19 +3,23 @@ import './ProductCard.css'
 import heart from '../../assets/heart.svg'
 import { Link } from 'react-router-dom'
 
-function ProductCard({products}) {
+
+
+function ProductCard({product}) {
   return (
+
+
+
     <div className='product-cards'>
 
         <div className='product-img'>
-          <img src={products.image} alt="" />
+          <Link to={`/details/${product.id}`} className='detail-link'><img src={product.image} alt="" /></Link>
         </div>
 
         <div className='product-info'>
-        <p className='title'>{products.title}</p>
-        <p className='category'>{products.category}</p>
-        <p className='price'>${products.price}</p>
-        <Link to={`/details/${products.id}`} className='detail-link'>See Details</Link>
+        <p className='title'>{product.title}</p>
+        <p className='category'>{product.category}</p>
+        <p className='price'>${product.price}</p>
         </div>
 
         </div>

@@ -6,6 +6,8 @@ import Header from './components/Header/Header';
 import ContactUs from './pages/ContactUs/ContactUs';
 import HomePage from './pages/HomePage/HomePage';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
+import CheckOut from './CheckOut/CheckOut';
+
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
             <Route path='/' element={ <HomePage/> }/>
             <Route path='/details/:productId' element={<ProductDetails/>}/>
             <Route path='/ContactUs' element={<ContactUs/>}/>
+            <Route path='/CheckOut' element={<CheckOut/>}/>
           </Routes>
       <Footer/>
       </BrowserRouter>
