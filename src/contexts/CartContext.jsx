@@ -25,8 +25,9 @@ export default function CartContextProvider(props){
 //function to add items to the cart and store in local storage
 const addToCart = (itemToAdd) => {
     console.log ('added', itemToAdd)
+    console.log(cart)
     let newItemToCart = [...cart, itemToAdd]
-
+    console.log(newItemToCart)
     //update state with new item
     setCart(newItemToCart)
 

@@ -21,7 +21,9 @@ function ProductCard({product}) {
     useEffect(
       ()=>{
         //is this added to the cart?
-        //setIsFavorite(cart.find(item=>item.id === product.id))
+        //when the line below is in effect it should look though the array to see if this item
+        //has been added, currently it is giving an error for ID.
+        setIsFavorite(cart.find((item) => item.id === product.id))
         console.log(product.id)
         //return the element if found, that is true
         //returns undefined if not, that is false

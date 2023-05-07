@@ -1,13 +1,22 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
+import { CartContext } from '../../contexts/CartContext'
+
 
 function Header() {
+
+  const {cart} = useContext(CartContext)
+
   return (
     <div className ="header-container">
         <a href='/'><div className="logo"><img src="./src/assets/logo.svg" alt="" /></div></a>
         <div className="shopping-cart">
-          <p>1</p>
+          <p>
+            {
+          cart.length 
+          }
+          </p>
           <Link to='./CheckOut'><img src="./src/assets/shoppingcart.svg" alt="shopping-cart" /></Link>
           </div>
         </div>
