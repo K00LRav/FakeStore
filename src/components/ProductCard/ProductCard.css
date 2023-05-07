@@ -60,3 +60,21 @@
 .detail-link{
     text-decoration: none;
 }
+
+.heart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7e7e7;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    position: relative;
+    left: 190px;
+    top: 15px;
+}
+.heart-icon{
+    background-color: #E7e7e7;
+    border-radius: 50%;
+    
+}
