@@ -13,7 +13,7 @@ function Checkout() {
 
     <div className="cart">
 
-     <table>
+     {/* <table>
           <thead>
             <tr>
               <th>Item</th>
@@ -39,7 +39,7 @@ function Checkout() {
           ))}
         </table>
         <p>Total $0</p> 
-      
+       */}
      {/* {
       cart.map(item =>
       <div>
