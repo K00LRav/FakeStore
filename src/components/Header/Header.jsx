@@ -10,7 +10,12 @@ function Header() {
 
   return (
     <div className ="header-container">
-        <Link to='/'><div className="logo"><img src="../src/assets/logo.svg" alt="" /></div></Link>
+        <Link to='/'>
+          <div className="logo">
+            <img src="../src/assets/logo.svg" alt="" />
+            </div>
+            </Link>
+            
         <div className="shopping-cart">
           <p>
             {
