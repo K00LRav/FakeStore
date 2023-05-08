@@ -71,3 +71,18 @@
     margin: 30px 0 30px 800px;
   }
   
+  .return-btn{
+    background-color: #ffd814;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    width: 158px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 30px 0 30px 800px;
+  }
+
+  .modal-content p{
+    text-align: center;
+    font-size: 20px;
+  }

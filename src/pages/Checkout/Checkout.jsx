@@ -69,7 +69,7 @@ function Checkout() {
             </p>
           </div>
           <Link to="/">
-            <button>Return to MainPage</button>
+            <button className='return-btn'>Return to MainPage</button>
           </Link>
         </div>
       </Modal>
