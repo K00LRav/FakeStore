@@ -1,14 +1,16 @@
 import React from 'react'
 import './ProductDetails.css'
-import { useState, useEffect } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import { CartContext } from '../../contexts/CartContext'
 
 function ProductDetails() {
 
     const {productId} = useParams()
     const [productDetails, setProductDetails] = useState('')
 
+    const {cart, addToCart, removeCart} = useContext(CartContext)
 
     useEffect(
         ()=>{
@@ -34,11 +36,21 @@ function ProductDetails() {
         <p className='desc-price'>${productDetails?.price}</p>
         <p className='desc'>Description</p>
         <p className='description'>{productDetails?.description}</p>
-        <p className='add-to-cart'>Add to Cart</p>
+        <p className='add-to-cart'>
+        {cart.find((item) => item.id === productDetails.id) ? (
+            <p onClick={() => removeCart(productDetails.id)}>Remove from Cart</p>
+          ) : (
+            <p onClick={() => addToCart(productDetails)}>Add to Cart</p>
+          )}
+        </p>
+
+        {/* <p className='add-to-cart'>Add to Cart</p> */}
+
         </div>
         </div>
         </div>
   )
+  
 }
 
 export default ProductDetails

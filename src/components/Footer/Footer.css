@@ -7,14 +7,27 @@
 }
 
 .footer-container p{
-    padding-left: 10px;
+    padding-left: 20px;
     color: white;
 }
 
 .contact-us{
-    margin-right: 10px;
     border: none;
     background-color: transparent;
     color: white;
     text-decoration: none;
+    padding-right: 20px;
+}
+
+
+@media screen and (max-width: 750px){
+
+    .footer-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
 }
