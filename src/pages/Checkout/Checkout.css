@@ -59,10 +59,10 @@
     font-weight: 600;
   }
   
-  .cart button {
+  .checkout-btn{
     background-color: #ffd814;
     font-size: 14px;
-    color: var(--text-darkColor);
+    color: black;
     font-weight: 700;
     padding: 10px 20px;
     border: none;

@@ -1,11 +1,27 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState} from 'react'
 import { CartContext } from '../../contexts/CartContext';
 import './Checkout.css'
 import { BsTrash } from "react-icons/bs";
+import  Modal from "react-modal"
+import { AiOutlineClose } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 function Checkout() {
 
   const {cart,removeCart} = useContext(CartContext)
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+    }
+  }
+    Modal.setAppElement(document.getElementById("root"));
 
   return (
     <div className='checkout-container'>
@@ -39,18 +55,24 @@ function Checkout() {
           ))}
         </table>
         <p>Total $0</p> 
-      
+        
+            <button className='checkout-btn' onClick={() => setModalIsOpen(true)}>Check Out</button>
 
-       
-     {/* {
-      cart.map(item =>
-      <div>
-        <img src={item.image} className='cart-img' />
-        <p className='title'>{item.title}</p>
-        <p className='price'>${item.price}</p>
-      </div>
-      )
-    }  */}
+          <Modal isOpen={modalIsOpen} style={customStyles} contentLabel="modal">
+        <div className="modal-box">
+          <AiOutlineClose onClick={() => setModalIsOpen(false)} />
+          <div className="modal-content">
+            <p>Your Order was successful!</p>
+            <p>
+              Check your email for the order confirmation. Thank you for
+              shopping with Fake Store!
+            </p>
+          </div>
+          <Link to="/">
+            <button>Return to MainPage</button>
+          </Link>
+        </div>
+      </Modal>
     
     </div>
 
