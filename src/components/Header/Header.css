@@ -11,6 +11,10 @@
     padding-right: 30px;
   }
 
+  .cart-icon{
+    font-size: 30px;
+  }
+
   .shopping-cart p{
     background-color: red;
     color: white;
@@ -21,4 +25,14 @@
     position: relative;
     left: 12px;
     top: 12px;
+  }
+
+  .logo{
+    position: relative;
+    right: 100px;
+  }
+
+  .logo img {
+    height: 270px;
+    width: 350px;
   }
