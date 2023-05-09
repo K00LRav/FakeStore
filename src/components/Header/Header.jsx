@@ -12,7 +12,7 @@ function Header() {
     <div className ="header-container">
         <Link to='/'>
           <div className="logo">
-            <img src="../src/assets/logo.png" alt="" />
+            <h2 className='store-name'>Fake Store</h2>
             </div>
             </Link>
             

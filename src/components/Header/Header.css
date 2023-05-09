@@ -19,7 +19,7 @@
     background-color: red;
     color: white;
     border-radius: 50%;
-    height: 16px;
+    height: 18px;
     width: 17.69px;
     text-align: center;
     position: relative;
@@ -27,7 +27,18 @@
     top: 12px;
   }
 
-  .logo{
+.store-name{
+  font-weight: 700;
+  font-size: 26px;
+  color: #3a4895;
+  text-decoration: none;
+}
+
+.header-container a {
+  text-decoration: none;
+}
+
+  /* .logo{
     position: relative;
     right: 100px;
   }
@@ -35,4 +46,4 @@
   .logo img {
     height: 270px;
     width: 350px;
-  }
+  } */
